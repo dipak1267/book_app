@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "265659893259",
+    "project_id": "persorize14",
+    "storage_bucket": "persorize14.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265659893259:android:5e91b9791c606647ffe90e",
+        "android_client_info": {
+          "package_name": "com.example.project_beta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265659893259-q2v8r03auqontbsqq9tgnaicfcfe1bru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.project_beta",
+            "certificate_hash": "8794be283eedd4fe57ff62b02d606a2f925d56de"
+          }
+        },
+        {
+          "client_id": "265659893259-jo1g62eaq3sc1dqf1h3f807gkjhig8pc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApdMZxgwrBJ6RFFu9t2nSmVSlGKlrsLf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265659893259-jo1g62eaq3sc1dqf1h3f807gkjhig8pc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

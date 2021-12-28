@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="13.219" height="16.097" viewBox="0 0 13.219 16.097">
+  <g id="book" transform="translate(-45.759 0)">
+    <path id="Path_1969" data-name="Path 1969" d="M58.978,0V13.211L47.2,14.5l-1.443.157V1.443A1.442,1.442,0,0,1,47.2,0Z" transform="translate(0)" fill="#da4a54"/>
+    <path id="Path_1970" data-name="Path 1970" d="M47.2,0V14.5l-1.443.157V1.443A1.442,1.442,0,0,1,47.2,0Z" transform="translate(0 0)" fill="#c32430"/>
+    <path id="Path_1971" data-name="Path 1971" d="M58.979,420.235H47.2a1.442,1.442,0,0,0,0,2.885H58.979v-.81l-.587-.633.587-.633Z" transform="translate(-0.001 -407.023)" fill="#c32430"/>
+    <path id="Path_1972" data-name="Path 1972" d="M72.147,447.255a.633.633,0,1,1,0-1.266H83.924v1.266Z" transform="translate(-24.945 -431.968)" fill="#dfeaef"/>
+    <path id="Path_1973" data-name="Path 1973" d="M146.366,3.128l-1.049-1.076-1.049,1.076V0h2.1Z" transform="translate(-95.413 0)" fill="#f4dd45"/>
+    <path id="Path_1974" data-name="Path 1974" d="M152.859,128.242h-5.592a1.015,1.015,0,0,0-1.015,1.015v3.1a1.015,1.015,0,0,0,1.015,1.015h5.592a1.015,1.015,0,0,0,1.015-1.015v-3.1A1.015,1.015,0,0,0,152.859,128.242Z" transform="translate(-97.334 -124.21)" fill="#dfeaef"/>
+    <path id="Path_1975" data-name="Path 1975" d="M145.375,126.13h-5.592a1.26,1.26,0,0,1-1.258-1.258v-3.1a1.26,1.26,0,0,1,1.258-1.258h5.592a1.26,1.26,0,0,1,1.258,1.258v3.1A1.26,1.26,0,0,1,145.375,126.13ZM139.783,121a.773.773,0,0,0-.772.772v3.1a.773.773,0,0,0,.772.772h5.592a.773.773,0,0,0,.772-.772v-3.1a.773.773,0,0,0-.772-.772Z" transform="translate(-89.85 -116.727)" fill="#c32430"/>
+    <g id="Group_3492" data-name="Group 3492" transform="translate(50.205 5.709)">
+      <path id="Path_1976" data-name="Path 1976" d="M191.989,182.091h-4.563a.243.243,0,0,1,0-.486h4.563a.243.243,0,0,1,0,.486Z" transform="translate(-187.183 -181.605)" fill="#665e66"/>
+      <path id="Path_1977" data-name="Path 1977" d="M191.989,223.027h-4.563a.243.243,0,0,1,0-.486h4.563a.243.243,0,0,1,0,.486Z" transform="translate(-187.183 -221.254)" fill="#665e66"/>
+    </g>
+  </g>
+</svg>

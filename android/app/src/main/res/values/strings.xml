@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Persorize Beta</string>
+    <string name="facebook_app_id">926563391300922</string>
+    <string name="fb_login_protocol_scheme">fb926563391300922</string>
+</resources>

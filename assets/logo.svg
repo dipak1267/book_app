@@ -1,0 +1,94 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 406.44">
+    <defs>
+        <style>
+            .cls-1{fill:url(#radial-gradient);}.cls-2,.cls-5{fill:none;}.cls-3{clip-path:url(#clip-path);}.cls-18,.cls-4{fill:#fff;}.cls-5{stroke:#fff;stroke-miterlimit:10;stroke-width:1.98px;}.cls-6{fill:#1b1464;}.cls-7{clip-path:url(#clip-path-2);}.cls-8{fill:#232323;}.cls-9{fill:#f7931e;}.cls-10{fill:#f8bd20;}.cls-11{fill:#f8bc1d;}.cls-12{fill:#f8bd24;}.cls-13{fill:#f8bd22;}.cls-14{fill:#f8bc1f;}.cls-15{clip-path:url(#clip-path-3);}.cls-16{mask:url(#mask);}.cls-17{fill:url(#radial-gradient-2);}.cls-18{font-size:329.63px;}.cls-18,.cls-19{font-family:BarlowCondensed-Regular,
+            Barlow Condensed;}.cls-19{font-size:100.5px;fill:#f2ae27;}
+        </style>
+        <radialGradient id="radial-gradient" cx="-359.05" cy="1013.5" r="0.58"
+            gradientTransform="matrix(101.5, 0, 0, -101.5, 36575.98, 103002.1)"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#999" />
+            <stop offset="0.2" stop-color="#6d6d6d" />
+            <stop offset="0.48" stop-color="#323232" />
+            <stop offset="0.69" stop-color="#0e0e0e" />
+            <stop offset="0.8" />
+            <stop offset="1" />
+        </radialGradient>
+        <clipPath id="clip-path" transform="translate(0 38.72)">
+            <rect class="cls-2" y="4.13" width="264.02" height="361.18" />
+        </clipPath>
+        <clipPath id="clip-path-2" transform="translate(0 38.72)">
+            <circle class="cls-2" cx="133.63" cy="136.42" r="56.97" />
+        </clipPath>
+        <clipPath id="clip-path-3" transform="translate(0 38.72)">
+            <path class="cls-2"
+                d="M75.16,136.4A58.79,58.79,0,1,0,134,77.61,58.79,58.79,0,0,0,75.16,136.4" />
+        </clipPath>
+        <mask id="mask" x="75.16" y="116.33" width="117.57" height="117.57"
+            maskUnits="userSpaceOnUse">
+            <g transform="translate(0 38.72)">
+                <rect class="cls-1" x="75.16" y="77.61" width="117.57" height="117.57" />
+            </g>
+        </mask>
+        <radialGradient id="radial-gradient-2" cx="-359.05" cy="1013.5" r="0.58"
+            gradientTransform="matrix(101.5, 0, 0, -101.5, 36575.98, 103040.82)"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#fff" />
+            <stop offset="0.8" stop-color="#fff" />
+            <stop offset="1" stop-color="#fff" />
+        </radialGradient>
+    </defs>
+    <title>logo</title>
+    <g class="cls-3">
+        <path class="cls-4"
+            d="M258.77,99.19A131.3,131.3,0,0,0,246.34,70.1,133.25,133.25,0,0,0,239,58.73l-.46-.62a132.09,132.09,0,0,0-75-50.19c-1.18-.29-2.38-.56-3.57-.82A132.12,132.12,0,0,0,8.7,89a130.74,130.74,0,0,0-6.19,21.53A132.82,132.82,0,0,0,.24,128.25h0v.05C.17,129.54.11,130.79.07,132S0,134.77,0,136.14c0,2.63.09,5.24.24,7.84V365.31l55.32-45.47V306.57l-.19-47.42.19-22.79V136.14a76.45,76.45,0,0,1,71-76.24c1.81-.13,3.62-.21,5.46-.21a76.46,76.46,0,1,1-40.92,141v61A132.05,132.05,0,0,0,198.87,250q2.88-1.69,5.67-3.53l1.38-.91A132.18,132.18,0,0,0,258.77,99.19"
+            transform="translate(0 38.72)" />
+    </g>
+    <circle class="cls-5" cx="133.63" cy="175.14" r="57.26" />
+    <circle class="cls-6" cx="133.63" cy="175.14" r="57.26" />
+    <g class="cls-7">
+        <path class="cls-8" d="M130.31,78.38h0" transform="translate(0 38.72)" />
+        <path class="cls-8" d="M128.45,78.43l.81,0-.81,0" transform="translate(0 38.72)" />
+        <path class="cls-8" d="M128.12,78.45l.33,0-.33,0" transform="translate(0 38.72)" />
+        <path class="cls-8" d="M131.24,78.37h0" transform="translate(0 38.72)" />
+        <path class="cls-8" d="M129.26,78.4l.89,0-.89,0" transform="translate(0 38.72)" />
+        <path class="cls-8" d="M112,154.82H112c-.22-.3-.43-.6-.64-.91.19.3.38.61.58.91"
+            transform="translate(0 38.72)" />
+        <path class="cls-9" d="M132.7,77.42h0" transform="translate(0 38.72)" />
+        <path class="cls-9" d="M130.84,77.47l.81,0-.81,0" transform="translate(0 38.72)" />
+        <path class="cls-9" d="M130.51,77.49l.33,0-.33,0" transform="translate(0 38.72)" />
+        <path class="cls-9" d="M133.63,77.41h0" transform="translate(0 38.72)" />
+        <path class="cls-9" d="M131.65,77.44l.88,0-.88,0" transform="translate(0 38.72)" />
+        <path class="cls-10"
+            d="M123.3,148a88.77,88.77,0,0,1,18.14,13.2,112.47,112.47,0,0,1,9.9-6.55A115.61,115.61,0,0,1,192.88,140c.07-1.18.11-2.37.11-3.58a58.48,58.48,0,0,0-9.39-31.86,108,108,0,0,0-15.24,5.38,104.63,104.63,0,0,0-45.06,38"
+            transform="translate(0 38.72)" />
+        <path class="cls-11"
+            d="M138.83,98.82A112,112,0,0,1,159,83.08,59.43,59.43,0,0,0,134,77.41h-1.42l-.88,0-.81,0-.33,0a59.58,59.58,0,0,0-16.7,3.29,88.8,88.8,0,0,1,25,18"
+            transform="translate(0 38.72)" />
+        <path class="cls-12"
+            d="M139.48,163.48a79.9,79.9,0,0,0-28.14-16.87,82.52,82.52,0,0,0-36.73-3.86,59.17,59.17,0,0,0,40.88,49.88,112.26,112.26,0,0,1,24-29.15m-25.12-9.62c-.2-.3-.39-.61-.58-.91.21.31.42.61.64.91h-.06"
+            transform="translate(0 38.72)" />
+        <path class="cls-13"
+            d="M113.81,144c2.13.73,4.17,1.54,6.13,2.39a111.68,111.68,0,0,1,14.6-18A80.13,80.13,0,0,0,83.7,104.5a58.44,58.44,0,0,0-9.43,31.92c0,1.08,0,2.14.09,3.2A91,91,0,0,1,113.81,144"
+            transform="translate(0 38.72)" />
+        <path class="cls-14"
+            d="M119,193.62a59.52,59.52,0,0,0,14.6,1.81,72.56,72.56,0,0,0,19.3-3.16,59.15,59.15,0,0,0,39.8-49.57,106.69,106.69,0,0,0-36.43,13.22A103.06,103.06,0,0,0,119,193.62"
+            transform="translate(0 38.72)" />
+        <path class="cls-11"
+            d="M125.14,115.78a111.65,111.65,0,0,1,11.28-13.45,80,80,0,0,0-26.35-20.09,59.52,59.52,0,0,0-24.12,19,88.64,88.64,0,0,1,21.56,5.32,87.5,87.5,0,0,1,17.63,9.18"
+            transform="translate(0 38.72)" />
+        <path class="cls-11"
+            d="M127.68,118.36a88.6,88.6,0,0,1,9.64,8.22,112.25,112.25,0,0,1,28.12-18.52,116.86,116.86,0,0,1,16.38-6.1A59.66,59.66,0,0,0,162.06,84.6a104.51,104.51,0,0,0-34.38,33.76"
+            transform="translate(0 38.72)" />
+        <path class="cls-9" d="M114.36,153.86h.06c-.22-.3-.43-.6-.64-.91.19.3.38.61.58.91"
+            transform="translate(0 38.72)" />
+    </g>
+    <g class="cls-15">
+        <g class="cls-16">
+            <rect class="cls-17" x="75.16" y="116.33" width="117.57" height="117.57" />
+        </g>
+    </g>
+    <text class="cls-18" transform="translate(291.55 280.18)">ersorize</text>
+    <text class="cls-19" transform="translate(303.82 385.43)">Embrace Your Uniqueness</text>
+</svg>
