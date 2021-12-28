@@ -6,7 +6,7 @@ class BookBankApiController extends GetxController {
   var bookList = [].obs;
 
   getBookList() async {
-    final response = await ApiService.getBooks(categoryId: '1');
+    final response = await ApiService.getAllBooks();
     response.data.forEach((v) {
       BookList book = BookList.fromJson(v);
       bookList.add(book);
