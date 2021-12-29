@@ -18,7 +18,7 @@ class ApiEndpoint {
   static const LIKE_POST = "/users/posts/like";
   static const MASTER_CATEGORY = "/master/book/category";
   static const IS_VERIFIED = "/admin/posts/isverified";
-  static const GET_BOOK = "/book/";
+  static const getBook = "/book";
 
   static const DEV_CONTENT_TYPE = "application/x-www-form-urlencoded";
   static const DEV_GRANT_TYPE = "password";
