@@ -10,6 +10,7 @@ import 'package:project_beta/network/api_service.dart';
 import 'package:project_beta/services/auth/google.dart';
 import 'package:project_beta/src/common_widgets/snackbars.dart';
 import 'package:project_beta/src/models/users_model.dart';
+import 'package:project_beta/utils/shared_preference_local_storage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 var auth;
@@ -28,7 +29,7 @@ class AuthService {
       );
       firebase.User user = authUser.user!;
       UsersModel? users = await getUserDetails(user.uid);
-
+      SharedPreferenceLocalStorage.userId(users!.id);
       if (users != null) {
         final SharedPreferences prefs = await _prefs;
         prefs.setString(user.uid, jsonEncode(users));

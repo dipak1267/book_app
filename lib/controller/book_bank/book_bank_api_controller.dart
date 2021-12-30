@@ -20,7 +20,7 @@ class BookBankApiController extends GetxController {
   var formKey = GlobalKey<FormState>();
 
   getBookList() async {
-    final response = await ApiService.getBooks();
+    final response = await ApiService.getBooks(categoryId: '1');
     response.data.forEach((v) {
       BookList book = BookList.fromJson(v);
       bookList.add(book);
@@ -33,15 +33,19 @@ class BookBankApiController extends GetxController {
   onPublishTap() async {
     if (formKey.currentState!.validate()) {
       BookList book = BookList(
-          id: 1,
-          title: titleController.text,
-          subject: subjectController.text,
-          language: languageController.text,
-          authorName: authorNameController.text,
-          isbnNo: isbnNoController.text,
-          bookType: bookTypeController.text,
-          condition: conditionController.text,
-          priceRange: priceRangeController.text);
+        // id: 1,
+        title: titleController.text,
+        subject: subjectController.text,
+        language: languageController.text,
+        authorName: authorNameController.text,
+        isbnNo: isbnNoController.text,
+        bookType: bookTypeController.text,
+        condition: conditionController.text,
+        priceRange: priceRangeController.text,
+        category: Category(id: 1),
+        bookBoardName: Category(id: 1),
+        classStd: Category(id: 1),
+      );
       ApiService.postBook(data: book.toJson());
     }
   }

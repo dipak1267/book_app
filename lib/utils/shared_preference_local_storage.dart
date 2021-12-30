@@ -47,4 +47,12 @@ class SharedPreferenceLocalStorage {
   static Future<int?> getLastRefreshTime() async {
     return await _preferences.getInt(SharedPreferenceConst.LAST_REFRESH_TIME);
   }
+
+  static Future<void> userId(value) async {
+    await _preferences.setInt(SharedPreferenceConst.USER_ID, value);
+  }
+
+  static Future<int?> getUserId() async {
+    return _preferences.getInt(SharedPreferenceConst.USER_ID);
+  }
 }

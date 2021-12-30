@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/get.dart';
 import 'package:project_beta/components/book_details/widgets/BookDetailsTabView.dart';
 import 'package:project_beta/components/book_details/widgets/page_download_share_widget.dart';
 import 'package:project_beta/constants/app_assets.dart';
 import 'package:project_beta/constants/lang_constants.dart';
+import 'package:project_beta/controller/book_bank/book_details_tabs_getx_controller.dart';
 import 'package:project_beta/src/common_widgets/app_button.dart';
 import 'package:project_beta/src/common_widgets/circular_icon_container.dart';
 import 'package:project_beta/src/extensions/common_extension.dart';
@@ -12,10 +14,17 @@ import 'package:project_beta/src/screen_utils.dart';
 import 'package:project_beta/src/template/material_template.dart';
 import 'package:project_beta/theme/app_theme.dart';
 
-class BookDetailsBody extends StatelessWidget {
+class BookDetailsBody extends StatefulWidget {
   final BookList? book;
 
-  const BookDetailsBody({Key? key, this.book}) : super(key: key);
+  BookDetailsBody({Key? key, this.book}) : super(key: key);
+
+  @override
+  State<BookDetailsBody> createState() => _BookDetailsBodyState();
+}
+
+class _BookDetailsBodyState extends State<BookDetailsBody> {
+  final ctrl = Get.put(BookDetailsTabsGetXController());
 
   @override
   Widget build(BuildContext context) {
@@ -29,11 +38,21 @@ class BookDetailsBody extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  CircularIconContainer(
-                    avatar: AppAssets.like,
-                    padding: 12,
-                    iconBackgroundColor: AppColor.white,
-                    height: 24.h,
+                  Obx(
+                    () => InkWell(
+                      child: CircularIconContainer(
+                        avatar: AppAssets.like,
+                        padding: 12,
+                        iconBackgroundColor: ctrl.isLike.value
+                            ? AppColor.lightYellow
+                            : AppColor.white,
+                        height: 24.h,
+                      ),
+                      onTap: () {
+                        ctrl.isLike.value = true;
+                        ctrl.onliketap();
+                      },
+                    ),
                   ),
                   Container(
                     height: 72.h,
@@ -47,11 +66,21 @@ class BookDetailsBody extends StatelessWidget {
                       fit: BoxFit.contain,
                     ),
                   ),
-                  CircularIconContainer(
-                    avatar: AppAssets.bookmark,
-                    padding: 14,
-                    iconBackgroundColor: AppColor.white,
-                    height: 24.h,
+                  Obx(
+                    () => InkWell(
+                      child: CircularIconContainer(
+                        avatar: AppAssets.bookmark,
+                        padding: 12,
+                        iconBackgroundColor: ctrl.isBookMark.value
+                            ? AppColor.lightYellow
+                            : AppColor.white,
+                        height: 24.h,
+                      ),
+                      onTap: () {
+                        ctrl.isBookMark.value = true;
+                        ctrl.onbookmarktap();
+                      },
+                    ),
                   ),
                 ],
               ),
@@ -75,7 +104,7 @@ class BookDetailsBody extends StatelessWidget {
                 height: 4.h,
               ),
               Text(
-                book!.title ?? '----',
+                widget.book!.title ?? '----',
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.subtitle2,
               ),
@@ -83,7 +112,7 @@ class BookDetailsBody extends StatelessWidget {
                 height: 2.h,
               ),
               Text(
-                book!.bookType ?? LanguageConstants.category,
+                widget.book!.bookType ?? LanguageConstants.category,
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.subtitle2!.copyWith(
                       color: AppColor.secondaryColor,
@@ -98,7 +127,7 @@ class BookDetailsBody extends StatelessWidget {
           ),
         ),
         SizedBox(height: 4.h),
-        double.parse(book!.priceRange!) > 0
+        double.parse(widget.book!.priceRange!) > 0
             ? Row(
                 children: [
                   CardTemplate(
@@ -107,7 +136,7 @@ class BookDetailsBody extends StatelessWidget {
                       height: 22.h,
                       alignment: Alignment.center,
                       child: Text(
-                        '${book!.priceRange} \$',
+                        '${widget.book!.priceRange} \$',
                         style: Theme.of(context).textTheme.subtitle1,
                       ).setMarginAll(
                         value: 14.w,
@@ -138,5 +167,11 @@ class BookDetailsBody extends StatelessWidget {
               ),
       ],
     );
+  }
+
+  @override
+  void initState() {
+    ctrl.getLikeAndbookMark(widget.book?.id.toString());
+    super.initState();
   }
 }

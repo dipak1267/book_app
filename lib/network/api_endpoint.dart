@@ -19,6 +19,10 @@ class ApiEndpoint {
   static const MASTER_CATEGORY = "/master/book/category";
   static const IS_VERIFIED = "/admin/posts/isverified";
   static const getBook = "/book";
+  static const Like = "/book/like";
+  static const bookMark = "/bookmark";
+  static const getBookMark = "/bookmark/userId";
+
 
   static const DEV_CONTENT_TYPE = "application/x-www-form-urlencoded";
   static const DEV_GRANT_TYPE = "password";
