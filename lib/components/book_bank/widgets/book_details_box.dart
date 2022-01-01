@@ -78,7 +78,7 @@ class BookDetailsBox extends StatelessWidget {
                     ),
                     SizedBox(height: 4.h),
                     Text(
-                      book!.subject!,
+                      book!.description ?? '---',
                       style: Theme.of(context).textTheme.subtitle2!.copyWith(
                             color: AppColor.secondaryTextColor.withOpacity(0.5),
                             fontWeight: FontWeight.w600,

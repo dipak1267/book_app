@@ -3,11 +3,14 @@ import 'package:get/get.dart';
 import 'package:project_beta/constants/lang_constants.dart';
 import 'package:project_beta/controller/book_bank/book_details_tabs_getx_controller.dart';
 import 'package:project_beta/src/extensions/common_extension.dart';
+import 'package:project_beta/src/models/book_list_model.dart';
 import 'package:project_beta/src/screen_utils.dart';
 import 'package:project_beta/theme/app_theme.dart';
 
 class BookDetailsTabs extends StatelessWidget {
-  const BookDetailsTabs({Key? key}) : super(key: key);
+  final BookList? book;
+
+  const BookDetailsTabs({Key? key, this.book}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +68,7 @@ class BookDetailsTabs extends StatelessWidget {
               height: MediaQuery.of(context).size.height / 2,
               child: TabBarView(
                 controller: controller.tabController,
-                children: controller.tabs,
+                children: controller.getPage(book!),
               ).setMarginOnly(
                 bottom: 12.h,
                 top: 4.h,

@@ -4,12 +4,17 @@ import 'package:get/get.dart';
 import 'package:project_beta/constants/lang_constants.dart';
 import 'package:project_beta/controller/book_bank/book_details_tabs_getx_controller.dart';
 import 'package:project_beta/src/extensions/common_extension.dart';
+import 'package:project_beta/src/models/book_list_model.dart';
 import 'package:project_beta/src/screen_utils.dart';
 import 'package:project_beta/src/template/material_template.dart';
 import 'package:project_beta/src/template/responsive.dart';
 import 'package:project_beta/theme/app_theme.dart';
 
 class BookDetailsTabView extends StatelessWidget {
+  final BookList? book;
+
+  BookDetailsTabView({Key? key, this.book}) : super(key: key);
+
   final BookDetailsTabsGetXController bookDetailsTabsGetXController =
       Get.put(BookDetailsTabsGetXController());
 
@@ -60,7 +65,7 @@ class BookDetailsTabView extends StatelessWidget {
                         : 132.h,
                 child: TabBarView(
                   controller: controller.tabController,
-                  children: controller.tabs,
+                  children: controller.getPage(book!),
                 ).setMarginOnly(
                   bottom: 12.h,
                   top: 4.h,

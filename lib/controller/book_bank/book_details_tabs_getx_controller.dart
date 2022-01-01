@@ -4,6 +4,7 @@ import 'package:project_beta/components/book_details/widgets/about_tab.dart';
 import 'package:project_beta/components/book_details/widgets/details_tab.dart';
 import 'package:project_beta/components/book_details/widgets/reviews_tab.dart';
 import 'package:project_beta/network/api_service.dart';
+import 'package:project_beta/src/models/book_list_model.dart';
 import 'package:project_beta/utils/shared_preference_local_storage.dart';
 
 class BookDetailsTabsGetXController extends GetxController
@@ -12,11 +13,14 @@ class BookDetailsTabsGetXController extends GetxController
   RxBool isLike = false.obs;
   RxBool isBookMark = false.obs;
 
-  final List<Widget> tabs = [
-    AboutTab(),
-    DetailsTab(),
-    Reviews(),
-  ].obs;
+  getPage(BookList book) {
+    final List<Widget> tabs = [
+      AboutTab(book: book),
+      DetailsTab(),
+      Reviews(),
+    ].obs;
+    return tabs;
+  }
 
   onliketap() {
     var data = {'isLike': isLike.value};

@@ -30,7 +30,10 @@ class AddBookBody extends StatelessWidget {
               Text(
                 LanguageConstants.addBookCoverPic,
                 textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.subtitle2!.copyWith(color: AppColor.darkBorderColor.withOpacity(0.5)),
+                style: Theme.of(context)
+                    .textTheme
+                    .subtitle2!
+                    .copyWith(color: AppColor.darkBorderColor.withOpacity(0.5)),
               ),
               SizedBox(height: 8.h),
               Form(
@@ -55,6 +58,13 @@ class AddBookBody extends StatelessWidget {
                   AppTextFormField(
                     title: LanguageConstants.language,
                     controller: ctrl.languageController,
+                    validator: (val) {
+                      if (val!.isEmpty) return "can't empty";
+                    },
+                  ),
+                  AppTextFormField(
+                    title: 'BookDescription',
+                    controller: ctrl.descriptionController,
                     validator: (val) {
                       if (val!.isEmpty) return "can't empty";
                     },

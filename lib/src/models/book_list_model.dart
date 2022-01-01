@@ -2,6 +2,7 @@ class BookList {
   final int? id;
   final String? title;
   final String? subject;
+  final String? description;
   final String? language;
   final String? authorName;
   final String? isbnNo;
@@ -16,6 +17,7 @@ class BookList {
       {this.id,
       this.title,
       this.subject,
+      this.description,
       this.language,
       this.authorName,
       this.isbnNo,
@@ -31,6 +33,7 @@ class BookList {
       id: json['id'],
       title: json['title'],
       authorName: json['authorName'],
+      description: json['bookDescription'],
       bookBoardName: json['bookBoardName'] != null
           ? new Category.fromJson(json['bookBoardName'])
           : null,
@@ -54,6 +57,7 @@ class BookList {
     data['id'] = this.id;
     data['title'] = this.title;
     data['subject'] = this.subject;
+    data['bookDescription'] = this.description;
     data['langugae'] = this.language;
     data['authorName'] = this.authorName;
     data['isbnNo'] = this.isbnNo;

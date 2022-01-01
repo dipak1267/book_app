@@ -4,10 +4,14 @@ import 'package:project_beta/constants/lang_constants.dart';
 import 'package:project_beta/src/common_widgets/app_text_button.dart';
 import 'package:project_beta/src/common_widgets/circular_icon_container.dart';
 import 'package:project_beta/src/extensions/common_extension.dart';
+import 'package:project_beta/src/models/book_list_model.dart';
 import 'package:project_beta/src/screen_utils.dart';
 import 'package:project_beta/theme/app_theme.dart';
 
 class AboutTab extends StatelessWidget {
+  final BookList? book;
+
+  AboutTab({Key? key, this.book}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -45,7 +49,7 @@ class AboutTab extends StatelessWidget {
           ],
         ),
         Text(
-          LanguageConstants.generalContent,
+          book?.description ?? 'No description',
           style: Theme.of(context).textTheme.subtitle1!.copyWith(
                 color: AppColor.darkBackgroundColor.withOpacity(0.5),
               ),

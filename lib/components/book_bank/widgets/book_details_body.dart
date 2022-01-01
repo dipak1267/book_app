@@ -43,13 +43,12 @@ class _BookDetailsBodyState extends State<BookDetailsBody> {
                       child: CircularIconContainer(
                         avatar: AppAssets.like,
                         padding: 12,
-                        iconBackgroundColor: ctrl.isLike.value
-                            ? AppColor.lightYellow
-                            : AppColor.white,
+                        iconBackgroundColor:
+                            ctrl.isLike.value ? Colors.red : AppColor.white,
                         height: 24.h,
                       ),
                       onTap: () {
-                        ctrl.isLike.value = true;
+                        ctrl.isLike.value = !ctrl.isLike.value;
                         ctrl.onliketap();
                       },
                     ),
@@ -72,12 +71,12 @@ class _BookDetailsBodyState extends State<BookDetailsBody> {
                         avatar: AppAssets.bookmark,
                         padding: 12,
                         iconBackgroundColor: ctrl.isBookMark.value
-                            ? AppColor.lightYellow
+                            ? Colors.blue
                             : AppColor.white,
                         height: 24.h,
                       ),
                       onTap: () {
-                        ctrl.isBookMark.value = true;
+                        ctrl.isBookMark.value = !ctrl.isBookMark.value;
                         ctrl.onbookmarktap();
                       },
                     ),
@@ -112,7 +111,7 @@ class _BookDetailsBodyState extends State<BookDetailsBody> {
                 height: 2.h,
               ),
               Text(
-                widget.book!.bookType ?? LanguageConstants.category,
+                widget.book!.authorName ?? LanguageConstants.category,
                 textAlign: TextAlign.center,
                 style: Theme.of(context).textTheme.subtitle2!.copyWith(
                       color: AppColor.secondaryColor,
@@ -122,7 +121,9 @@ class _BookDetailsBodyState extends State<BookDetailsBody> {
                 height: 4.h,
               ),
               PageDownloadShareWidget(),
-              BookDetailsTabView(),
+              BookDetailsTabView(
+                book: widget.book!,
+              ),
             ],
           ),
         ),

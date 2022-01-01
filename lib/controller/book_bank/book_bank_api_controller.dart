@@ -7,6 +7,7 @@ class BookBankApiController extends GetxController {
   var bookList = [].obs;
   final titleController = TextEditingController();
   final subjectController = TextEditingController();
+  final descriptionController = TextEditingController();
   final languageController = TextEditingController();
   final authorNameController = TextEditingController();
   final isbnNoController = TextEditingController();
@@ -33,7 +34,8 @@ class BookBankApiController extends GetxController {
   onPublishTap() async {
     if (formKey.currentState!.validate()) {
       BookList book = BookList(
-        // id: 1,
+        // id: 1
+        description: descriptionController.text,
         title: titleController.text,
         subject: subjectController.text,
         language: languageController.text,
